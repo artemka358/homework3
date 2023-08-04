@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action=" https://fom.in.ua/echo">
+    <fieldset>
+      <legend>Пошук авто</legend>
+      <p>
+        <label for="body1">Тип кузова</label><br>
+        <select id="body1">
+          <option value="">не выбрано</option>
+          <option value="">Седан</option>
+          <option value="">Хэтчбек</option>
+          <option value="">Универсал</option>
+          <option value="">Лифтбек</option>
+          <option value="">Купе</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="body2">Марка авто</label><br>
+        <select id="body2">
+          <option value="">не выбрано</option>
+          <option value="">Audi</option>
+          <option value="">BMW</option>
+          <option value="">Chevrolet</option>
+          <option value="">Ford</option>
+          <option value="">Honda</option>
+        </select>
+      </p>
+      <p>
+        <label for="cost">Ціна</label><br>
+        <input type="number" placeholder="от" min="100" max="10000" id="cost">
+        <input type="number" placeholder="до" min="100" max="10000">
+      </p>
+      <p>
+        <label for="from">Рік випуску от:</label>
+        <label for="to">Рік випуску до:</label><br>
+        <input id="from" type="date">
+        <input id="to" type="date">
+      </p>
+      <p>
+      <p>Стан</p>
+      <div>
+        <input id="ch1" type="checkbox">
+        <label for="ch1">Б/У</label>
+      </div>
+      <div>
+        <input id="ck2" type="checkbox">
+        <label for="ck2">Нова</label>
+      </div>
+      <div>
+        <input id="ck3" type="checkbox">
+        <label for="ck3">Не розметнена</label>
+      </div>
+
+    </fieldset>
+    <fieldset>
+      <legend>Тип палива</legend>
+      <p>
+        <input id="h" type="radio" name="petrol">
+        <label for="h">Гібрид</label>
+        <input id="p" type="radio" name="petrol">
+        <label for="p">Бензин</label>
+        <input id="d" type="radio" name="petrol">
+        <label for="d">Дизель</label>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Колір</legend>
+      <p>
+        <label for="color">Колір авто</label>
+        <input id="color" type="color">
+      </p>
+    </fieldset>
+    <p>
+      <input type="submit">
+      <input type="reset">
+
+    </p>
+  </form>
+</body>
+
+</html>
